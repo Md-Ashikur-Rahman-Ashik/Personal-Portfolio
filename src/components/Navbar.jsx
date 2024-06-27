@@ -17,7 +17,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 rounded-xl shadow-xl">
+    <div className="navbar bg-base-100 rounded-xl shadow-xl mb-10">
       <div className="container mx-auto flex justify-center items-center">
         <div className="navbar-start flex items-center">
           <div className="dropdown z-50">
