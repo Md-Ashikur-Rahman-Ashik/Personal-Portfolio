@@ -2,19 +2,27 @@ const Skills = () => {
   return (
     <div className="container mx-auto mt-20">
       <h2 className="text-center text-3xl font-bold">My Skills</h2>
-      <div className="flex justify-center mt-10 items-center">
-        <div>
+      <div className="flex justify-center mt-10 items-center gap-10">
+        <div className="w-1/4">
           <img
             src="https://i.ibb.co/86rV1Jd/profile-Picture.jpg"
             alt="Profile-Picture"
-            className="rounded-xl w-1/3"
+            className="rounded-xl"
           />
         </div>
-        <div>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
+        <div className="w-1/2">
+          <ul className="flex gap-4 font-bold mb-4">
+            <li className="border-2 p-2 rounded-xl">HTML5</li>
+            <li className="border-2 p-2 rounded-xl">CSS3</li>
+            <li className="border-2 p-2 rounded-xl">Javascript</li>
+            <li className="border-2 p-2 rounded-xl">React JS</li>
+            <li className="border-2 p-2 rounded-xl">MongoDB</li>
           </ul>
+          <div>
+            {
+              "I started my web development journey in 2023. I'm passionate about frontend technologies and enjoy creating intuitive, visually appealing user experiences."
+            }
+          </div>
         </div>
       </div>
     </div>
