@@ -8,11 +8,6 @@ const Navbar = () => {
           About
         </NavLink>
       </li>
-      <li>
-        <NavLink to={"/projects"} className={"font-bold"}>
-          Projects
-        </NavLink>
-      </li>
     </>
   );
 
