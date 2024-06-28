@@ -1,13 +1,14 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="bg-black mt-20">
       <footer className="footer container mx-auto footer-center  text-white rounded p-10">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Projects</a>
+          <Link to={"/about"} className="link link-hover">
+            About
+          </Link>
         </nav>
         <nav>
           <div className="flex gap-4 text-2xl">
@@ -22,6 +23,7 @@ const Footer = () => {
             </a>
           </div>
         </nav>
+        <Link to={"/"}>ASHIKUR RAHMAN ASHIK</Link>
       </footer>
     </div>
   );
