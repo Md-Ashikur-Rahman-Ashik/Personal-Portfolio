@@ -9,8 +9,8 @@ const Banner = () => {
         }}
         className="relative w-full bg-cover rounded-xl"
       >
-        <div className="h-full text-white min-h-[calc(100vh-150px)] w-2/3 flex flex-col pl-36 gap-6 justify-center">
-          <h1 className="text-5xl flex flex-col gap-2">
+        <div className="h-full text-white min-h-[calc(100vh-150px)] md:w-3/4 w-full flex flex-col p-4 md:p-0 md:pl-36 gap-6 justify-center">
+          <h1 className="text-3xl md:text-5xl flex flex-col gap-2">
             {"Hi, I'm ASHIKUR RAHMAN ASHIK"}
             <span className="font-bold"> Web Developer</span>
           </h1>
@@ -25,7 +25,7 @@ const Banner = () => {
               <FaLinkedin />
             </a>
           </div>
-          <p className="w-1/2">
+          <p className="w-full md:w-full lg:w-2/3">
             {
               "My passion for web development started with building a responsive clothing website. I've since tackled projects like a volunteer management system and a medical camp platform."
             }

@@ -54,17 +54,19 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-20">
+    <div className="container mx-auto mt-20 md:p-8">
       <h2 className="text-center text-3xl font-bold mb-10">My Projects</h2>
       <div>
         {projects.map((project) => (
           <div
-            className="flex gap-10 justify-center items-center mb-10"
+            className="flex flex-col md:flex-col lg:flex-row gap-10 justify-center items-center mb-10"
             key={project.projectName}
           >
-            <div className="w-1/2">
-              <h2 className="text-2xl font-bold mb-4">{project.projectName}</h2>
-              <ul className="grid grid-cols-4 gap-2">
+            <div className="md:w-2/3 w-full p-4 md:p-0">
+              <h2 className="text-2xl md:text-center lg:text-left font-bold mb-4">
+                {project.projectName}
+              </h2>
+              <ul className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-2">
                 {project.technologies.map((technology, index) => (
                   <li
                     className="border-2 text-center rounded-xl p-1 font-bold"
@@ -85,7 +87,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="w-1/3">
+            <div className="w-full md:2/3">
               <img
                 src={project.photo}
                 alt={project.projectName}
