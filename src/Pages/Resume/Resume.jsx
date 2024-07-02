@@ -13,7 +13,8 @@ const Resume = () => {
 
       <iframe
         src="/AshikurRahmanResume.pdf"
-        style={{ width: "1300px", height: "1100px" }}
+        // style={{ width: "1300px", height: "1100px" }}
+        className="w-full min-h-screen"
       />
     </div>
   );
