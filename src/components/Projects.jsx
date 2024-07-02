@@ -80,7 +80,7 @@ const Projects = () => {
               <div className="flex justify-center mt-4">
                 <a
                   href={project.liveLink}
-                  className="btn bg-black text-white hover:bg-black"
+                  className="btn hover:scale-105 transition-transform bg-black text-white hover:bg-black"
                   target="_blank"
                 >
                   View Project

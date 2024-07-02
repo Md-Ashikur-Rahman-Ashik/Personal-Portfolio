@@ -4,8 +4,8 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to={"/about"} className={"font-bold"}>
-          About
+        <NavLink to={"/resume"} className={"font-bold"}>
+          Resume
         </NavLink>
       </li>
     </>
