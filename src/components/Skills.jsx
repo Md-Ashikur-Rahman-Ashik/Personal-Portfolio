@@ -14,7 +14,7 @@ const Skills = () => {
           />
         </div>
         <div className="w-1/2">
-          <ul className="md:flex justify-center items-center grid grid-cols-2 text-center gap-4 font-bold mb-4 text-5xl">
+          <ul className="md:flex justify-center items-center grid md:grid-cols-2 grid-cols-3 text-center gap-4 font-bold mb-4 text-5xl">
             <li>
               <FaHtml5 className="text-red-500" />
             </li>

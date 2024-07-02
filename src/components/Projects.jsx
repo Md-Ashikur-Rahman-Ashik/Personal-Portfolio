@@ -1,16 +1,19 @@
+import { FaCss3, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiJavascript, SiMongodb } from "react-icons/si";
+
 const Projects = () => {
   const projects = [
     {
       projectName: "Fabric Fusion",
       technologies: [
-        "HTML5",
-        "CSS3",
-        "Tailwind Css",
-        "Javascript",
-        "React Js",
-        "Express Js",
-        "Node Js",
-        "MongoDB",
+        <FaHtml5 className="text-red-500" key={"html"} />,
+        <FaCss3 className="text-blue-500" key={"css3"} />,
+        <RiTailwindCssFill className="text-blue-500" key={"tailwindCss"} />,
+        <SiJavascript className="text-yellow-500" key={"javascript"} />,
+        <FaReact className="text-blue-500" key={"reactJS"} />,
+        <FaNodeJs className="text-green-500" key={"nodeJS"} />,
+        <SiMongodb className="text-green-700" key={"mongoDB"} />,
       ],
       description:
         "I developed the Fabric Fusion Website, a web application for textile art enthusiasts to browse a curated gallery, create and manage their own projects, and potentially share their creations with the community. This project enhanced my front-end skills and provided valuable experience in integrating front-end and back-end technologies.",
@@ -20,14 +23,13 @@ const Projects = () => {
     {
       projectName: "ActifyNow",
       technologies: [
-        "HTML5",
-        "CSS3",
-        "Tailwind Css",
-        "Javascript",
-        "React Js",
-        "Express Js",
-        "Node Js",
-        "MongoDB",
+        <FaHtml5 className="text-red-500" key={"html"} />,
+        <FaCss3 className="text-blue-500" key={"css3"} />,
+        <RiTailwindCssFill className="text-blue-500" key={"tailwindCss"} />,
+        <SiJavascript className="text-yellow-500" key={"javascript"} />,
+        <FaReact className="text-blue-500" key={"reactJS"} />,
+        <FaNodeJs className="text-green-500" key={"nodeJS"} />,
+        <SiMongodb className="text-green-700" key={"mongoDB"} />,
       ],
       description:
         "I created ActifyNow, a Volunteer Management Website designed to connect volunteers with meaningful opportunities, fostering community growth through volunteer work. This platform enables users to easily find and participate in various activities, such as environmental conservation, social outreach, and educational initiatives, promoting both personal development and community improvement.",
@@ -37,14 +39,13 @@ const Projects = () => {
     {
       projectName: "CampMed",
       technologies: [
-        "HTML5",
-        "CSS3",
-        "Tailwind Css",
-        "Javascript",
-        "React Js",
-        "Express Js",
-        "Node Js",
-        "MongoDB",
+        <FaHtml5 className="text-red-500" key={"html"} />,
+        <FaCss3 className="text-blue-500" key={"css3"} />,
+        <RiTailwindCssFill className="text-blue-500" key={"tailwindCss"} />,
+        <SiJavascript className="text-yellow-500" key={"javascript"} />,
+        <FaReact className="text-blue-500" key={"reactJS"} />,
+        <FaNodeJs className="text-green-500" key={"nodeJS"} />,
+        <SiMongodb className="text-green-700" key={"mongoDB"} />,
       ],
       description:
         "As the sole developer of CampMed, I designed and built a comprehensive web solution to streamline the management of medical camps, facilitating scheduling, volunteer registration, and resource tracking. CampMed has reduced administrative burdens and improved the overall experience for volunteers and organizers, with future plans for additional features and mobile support.",
@@ -66,12 +67,9 @@ const Projects = () => {
               <h2 className="text-2xl md:text-center lg:text-left font-bold mb-4">
                 {project.projectName}
               </h2>
-              <ul className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-2">
+              <ul className="grid grid-cols-7">
                 {project.technologies.map((technology, index) => (
-                  <li
-                    className="border-2 text-center rounded-xl p-1 font-bold"
-                    key={index}
-                  >
+                  <li className="text-4xl" key={index}>
                     {technology}
                   </li>
                 ))}
