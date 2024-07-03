@@ -19,6 +19,10 @@ const Projects = () => {
         "I developed the Fabric Fusion Website, a web application for textile art enthusiasts to browse a curated gallery, create and manage their own projects, and potentially share their creations with the community. This project enhanced my front-end skills and provided valuable experience in integrating front-end and back-end technologies.",
       liveLink: "https://fabric-fusion-assignment-ten.web.app",
       photo: "https://i.ibb.co/c2fPkC1/assignment-Ten-Reduced.png",
+      frontend:
+        "https://github.com/Md-Ashikur-Rahman-Ashik/Fabric-Fusion-Frontend",
+      backend:
+        "https://github.com/Md-Ashikur-Rahman-Ashik/Fabric-Fusion-Backend",
     },
     {
       projectName: "ActifyNow",
@@ -35,6 +39,8 @@ const Projects = () => {
         "I created ActifyNow, a Volunteer Management Website designed to connect volunteers with meaningful opportunities, fostering community growth through volunteer work. This platform enables users to easily find and participate in various activities, such as environmental conservation, social outreach, and educational initiatives, promoting both personal development and community improvement.",
       liveLink: "https://actifynow-bd532.web.app",
       photo: "https://i.ibb.co/5jxhtdY/assignment-Eleven-Reduced.png",
+      frontend: "https://github.com/Md-Ashikur-Rahman-Ashik/ActifyNow-Frontend",
+      backend: "https://github.com/Md-Ashikur-Rahman-Ashik/ActifyNow-Backend",
     },
     {
       projectName: "CampMed",
@@ -51,6 +57,8 @@ const Projects = () => {
         "As the sole developer of CampMed, I designed and built a comprehensive web solution to streamline the management of medical camps, facilitating scheduling, volunteer registration, and resource tracking. CampMed has reduced administrative burdens and improved the overall experience for volunteers and organizers, with future plans for additional features and mobile support.",
       liveLink: "https://camp-med.web.app/",
       photo: "https://i.ibb.co/k1t0ndc/assignment-Twelve-Reduced.png",
+      frontend: "https://github.com/Md-Ashikur-Rahman-Ashik/CampMed-Frontend",
+      backend: "https://github.com/Md-Ashikur-Rahman-Ashik/CampMed-Backend",
     },
   ];
 
@@ -75,6 +83,24 @@ const Projects = () => {
                 ))}
               </ul>
               <p className="mt-4">{project.description}</p>
+              <p className="mt-4 flex justify-center">
+                <a
+                  href={project.frontend}
+                  className="font-bold bg-black text-white p-2 rounded-xl"
+                  target="_blank"
+                >
+                  {"GitHub repository of frontend code"}
+                </a>
+              </p>
+              <p className="mt-4 flex justify-center">
+                <a
+                  href={project.backend}
+                  className="font-bold bg-black text-white p-2 rounded-xl"
+                  target="_blank"
+                >
+                  {"GitHub repository of backend code"}
+                </a>
+              </p>
               <div className="flex justify-center mt-4">
                 <a
                   href={project.liveLink}
