@@ -2,7 +2,7 @@ import { FaCoffee } from "react-icons/fa";
 
 const Chat = () => {
   return (
-    <div className="container mx-auto mt-10">
+    <div id="contact" className="container mx-auto mt-10">
       <h2 className="text-3xl font-bold text-center">{"Let's have a chat"}</h2>
       <div className="flex justify-center items-center mt-10 gap-10">
         <div className="text-9xl">

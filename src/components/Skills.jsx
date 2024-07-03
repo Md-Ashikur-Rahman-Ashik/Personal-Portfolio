@@ -3,7 +3,7 @@ import { SiJavascript, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto mt-20 p-2 md:p-0">
+    <div id="skills" className="container mx-auto mt-20 p-2 md:p-0">
       <h2 className="text-center text-3xl font-bold">My Skills</h2>
       <div className="flex justify-center mt-10 items-center gap-10">
         <div className="md:w-1/4 w-1/2">

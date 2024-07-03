@@ -1,8 +1,24 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
     <>
+      <li>
+        <AnchorLink href="#skills">
+          <button className="font-bold">Skills</button>
+        </AnchorLink>
+      </li>
+      <li>
+        <AnchorLink href="#projects">
+          <button className="font-bold">Projects</button>
+        </AnchorLink>
+      </li>
+      <li>
+        <AnchorLink href="#contact">
+          <button className="font-bold">Contact</button>
+        </AnchorLink>
+      </li>
       <li>
         <NavLink to={"/resume"} className={"font-bold"}>
           Resume
@@ -34,7 +50,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 items-center justify-center"
             >
               {navLinks}
             </ul>
@@ -48,7 +64,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+          <ul className="menu menu-horizontal px-1 items-center justify-center">
+            {navLinks}
+          </ul>
         </div>
       </div>
     </div>

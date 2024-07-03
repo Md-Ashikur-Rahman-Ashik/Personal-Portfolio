@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -9,6 +10,12 @@ const Footer = () => {
           <Link to={"/resume"} className="link link-hover">
             Resume
           </Link>
+          <AnchorLink href="#skills">
+            <button>Skills</button>
+          </AnchorLink>
+          <AnchorLink href="#projects">
+            <button>Projects</button>
+          </AnchorLink>
         </nav>
         <nav>
           <div className="flex gap-4 text-2xl">
