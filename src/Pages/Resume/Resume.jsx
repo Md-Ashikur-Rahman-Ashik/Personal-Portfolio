@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Resume = () => {
   return (
     <div className="container mx-auto">
+      <Helmet>
+        <title>Resume | Ashikur Rahman Ashik</title>
+      </Helmet>
       <div className="flex justify-end mb-5">
         <a
           className="btn font-bold bg-black text-white hover:bg-black hover:scale-105 transition-transform"
