@@ -5,7 +5,7 @@ const Banner = () => {
     <div className="container mx-auto">
       <div
         style={{
-          backgroundImage: `linear-gradient(45deg, rgba(7, 25, 82, 0.7), rgba(0, 0, 0, 0.3)), url("https://i.ibb.co/VWbtV5g/Designer.jpg")`,
+          backgroundImage: `linear-gradient(45deg, rgba(7, 25, 82, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/VWbtV5g/Designer.jpg")`,
         }}
         className="relative w-full bg-cover rounded-xl"
       >
