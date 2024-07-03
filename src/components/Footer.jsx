@@ -16,6 +16,9 @@ const Footer = () => {
           <AnchorLink href="#projects">
             <button>Projects</button>
           </AnchorLink>
+          <AnchorLink href="#contact">
+            <button>Contact</button>
+          </AnchorLink>
         </nav>
         <nav>
           <div className="flex gap-4 text-2xl">
